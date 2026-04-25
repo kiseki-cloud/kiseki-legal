@@ -1,0 +1,287 @@
+/* Kiseki Legal — minimal typographic style. Pre-attorney V1 placeholder. */
+
+:root {
+  --sakura: #FFB7C5;
+  --matcha: #A4C48F;
+  --sumi: #1A1A1A;
+  --washi: #F5F0E1;
+  --paper: #FBFAF6;
+  --ink-soft: #4A4A4A;
+  --ink-faint: #8A8A8A;
+  --rule: #E5E0D5;
+  --warn-bg: #FFF6D6;
+  --warn-border: #E8C547;
+  --warn-text: #5C4A1A;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--sumi);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.draft-banner {
+  background: var(--warn-bg);
+  border-bottom: 1px solid var(--warn-border);
+  color: var(--warn-text);
+  padding: 10px 20px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.draft-banner strong { letter-spacing: 0.02em; }
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--sumi);
+  letter-spacing: -0.01em;
+}
+
+.brand .kanji {
+  font-family: "Noto Sans JP", -apple-system, sans-serif;
+  color: var(--sakura);
+  margin-right: 6px;
+  font-weight: 600;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.site-header nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+  color: var(--sumi);
+  border-bottom-color: var(--sakura);
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+main {
+  padding: 56px 0 96px;
+}
+
+main h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+main .subtitle {
+  color: var(--ink-faint);
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+main h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+main h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+main p { margin-bottom: 14px; }
+
+main ul, main ol {
+  margin: 0 0 14px 0;
+  padding-left: 22px;
+}
+
+main li { margin-bottom: 6px; }
+
+main a {
+  color: var(--sumi);
+  border-bottom: 1px solid var(--sakura);
+  text-decoration: none;
+  transition: background-color 120ms ease;
+}
+
+main a:hover { background-color: rgba(255, 183, 197, 0.18); }
+
+main strong { font-weight: 600; }
+
+main em { font-style: italic; color: var(--ink-soft); }
+
+main code, main pre {
+  font-family: "JetBrains Mono", ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 13.5px;
+}
+
+main code {
+  background: var(--washi);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+main pre {
+  background: var(--washi);
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 12px 0 18px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+main pre code { background: transparent; padding: 0; }
+
+main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 14px;
+}
+
+main th, main td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+main th {
+  font-weight: 600;
+  background: var(--washi);
+  font-size: 13px;
+  letter-spacing: 0.01em;
+}
+
+main td a { word-break: break-word; }
+
+main blockquote {
+  border-left: 3px solid var(--matcha);
+  margin: 14px 0;
+  padding: 6px 16px;
+  color: var(--ink-soft);
+  background: rgba(164, 196, 143, 0.07);
+}
+
+.section-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.section-list li {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  transition: border-color 140ms ease, background 140ms ease;
+}
+
+.section-list li:hover {
+  border-color: var(--sakura);
+  background: var(--paper);
+}
+
+.section-list a {
+  display: block;
+  text-decoration: none;
+  border: none;
+  color: var(--sumi);
+}
+
+.section-list a:hover { background: transparent; }
+
+.section-list h2 {
+  margin: 0 0 4px 0;
+  font-size: 17px;
+}
+
+.section-list p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 80px;
+  padding: 32px 0;
+  font-size: 13px;
+  color: var(--ink-faint);
+  background: var(--washi);
+}
+
+.site-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.site-footer address {
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.site-footer .meta {
+  text-align: right;
+}
+
+.site-footer a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--ink-faint);
+}
+
+@media (max-width: 640px) {
+  main h1 { font-size: 26px; }
+  main h2 { font-size: 18px; }
+  .site-header .container { flex-direction: column; align-items: flex-start; gap: 12px; padding: 16px 20px; }
+  .site-header nav { gap: 14px; }
+  .site-footer .container { flex-direction: column; }
+  .site-footer .meta { text-align: left; }
+  main pre { font-size: 12px; }
+  main table { font-size: 13px; }
+  main th, main td { padding: 8px 10px; }
+}
