@@ -2,20 +2,20 @@
 
 Static legal pages for Kiseki, deployed at `legal.thekiseki.app/*`.
 
-**Operating entity**: MATRIXVISTA - FZCO (UAE Free Zone Company, License 44526 IFZA, TRN 104467565800001).
+**Operating entity**: MATRIXVISTA - FZCO (United Arab Emirates). Full registration details (entity number, registered address, tax registration) are kept private and shared only with active Customers under contracting documentation.
 
 **Status**: V1 drafts — pending US SaaS attorney review (trigger: $5–10K MRR). All published pages carry a `DRAFT v1` banner.
 
 ## Routes
 
-| URL | File |
-|-----|------|
-| `legal.thekiseki.app/` | `index.html` |
-| `legal.thekiseki.app/terms` | `terms/index.html` |
-| `legal.thekiseki.app/privacy` | `privacy/index.html` |
-| `legal.thekiseki.app/dpa` | `dpa/index.html` |
-| `legal.thekiseki.app/sub-processors` | `sub-processors/index.html` |
-| `legal.thekiseki.app/cookies` | `cookies/index.html` |
+| URL | File | Visibility |
+|-----|------|-----------|
+| `legal.thekiseki.app/` | `index.html` | Public |
+| `legal.thekiseki.app/terms` | `terms/index.html` | Public |
+| `legal.thekiseki.app/privacy` | `privacy/index.html` | Public |
+| `legal.thekiseki.app/cookies` | `cookies/index.html` | Public |
+| `legal.thekiseki.app/dpa` | `dpa/index.html` | Stub — content provided to active Customers via `legal@thekiseki.app` (noindex, nofollow) |
+| `legal.thekiseki.app/sub-processors` | `sub-processors/index.html` | Stub — canonical list provided to active Customers via `legal@thekiseki.app` (noindex, nofollow) |
 
 ## Stack
 
