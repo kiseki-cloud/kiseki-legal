@@ -4,23 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sub-processors — Kiseki</title>
-  <meta name="description" content="Canonical list of third-party sub-processors used by Kiseki to deliver the Service. Operated by MATRIXVISTA - FZCO." />
-  <meta name="robots" content="index, follow" />
+  <meta name="description" content="The Kiseki sub-processors list is provided to active Customers on request." />
+  <meta name="robots" content="noindex, nofollow" />
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <div class="draft-banner">
-    <strong>DRAFT v1</strong> — pending attorney review. Document content may change before final publication.
-  </div>
-
   <header class="site-header">
     <div class="container">
       <a href="/" class="brand"><span class="kanji">奇跡</span>Kiseki — Legal</a>
       <nav>
         <a href="/terms/">Terms</a>
         <a href="/privacy/">Privacy</a>
-        <a href="/dpa/">DPA</a>
-        <a href="/sub-processors/" class="active">Sub-processors</a>
         <a href="/cookies/">Cookies</a>
       </nav>
     </div>
@@ -29,159 +23,47 @@
   <main>
     <div class="container">
       <h1>Sub-processors</h1>
-      <p class="subtitle">Last updated 2026-04-26 · Effective from 2026-04-26</p>
+      <p class="subtitle">Provided to active Customers on request</p>
 
-      <p>This page is the <strong>single source of truth</strong> for all third parties processing Kiseki Customer data. It is updated whenever a vendor is added or changed; Customers are notified at least 30 days in advance per the <a href="/dpa/">DPA</a> §5.4.</p>
-
-      <h2>Current sub-processors</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Vendor</th>
-            <th>Purpose</th>
-            <th>Data processed</th>
-            <th>Region</th>
-            <th>DPA</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td><strong>Anthropic</strong></td>
-            <td>AI text generation (Claude Opus 4.7)</td>
-            <td>Ad copy briefs, prospect conversation context, generated copy</td>
-            <td>US</td>
-            <td><a href="https://www.anthropic.com/legal/dpa">link</a></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td><strong>OpenAI</strong></td>
-            <td>AI image generation (gpt-image-1), text embeddings</td>
-            <td>Ad creative briefs, prompt context, generated images</td>
-            <td>US</td>
-            <td><a href="https://openai.com/policies/data-processing-addendum/">link</a></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td><strong>Supabase</strong></td>
-            <td>Database (Postgres + storage)</td>
-            <td>Tenant configuration, ad creative metadata, prospect conversations, payment tokens</td>
-            <td>EU (eu-west-1)</td>
-            <td><a href="https://supabase.com/dpa">link</a></td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td><strong>Cloudflare</strong></td>
-            <td>CDN, DNS, DDoS protection, edge caching</td>
-            <td>Visitor IP addresses, browser metadata, request / response data</td>
-            <td>US</td>
-            <td><a href="https://www.cloudflare.com/cloudflare-customer-dpa/">link</a></td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td><strong>Hetzner Online GmbH</strong></td>
-            <td>Server infrastructure (Kiseki backend hosting)</td>
-            <td>All Kiseki data at rest (encrypted), all backend computation</td>
-            <td>DE (EU)</td>
-            <td><a href="https://www.hetzner.com/legal/data-processing-agreement">link</a></td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td><strong>Resend</strong></td>
-            <td>Transactional email delivery</td>
-            <td>Customer email addresses, email content (welcome, billing, notifications)</td>
-            <td>US</td>
-            <td><a href="https://resend.com/dpa">link</a></td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td><strong>Polar.sh</strong></td>
-            <td>Merchant of Record, payment processing, tax compliance</td>
-            <td>Customer billing data, payment methods, transaction history</td>
-            <td>US</td>
-            <td><a href="https://polar.sh/legal/dpa">link</a></td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td><strong>Mux</strong></td>
-            <td>Video hosting (VSL Builder)</td>
-            <td>Customer-uploaded videos, video analytics</td>
-            <td>US</td>
-            <td><a href="https://www.mux.com/legal/dpa">link</a></td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td><strong>Apify</strong></td>
-            <td>Competitor research scraping</td>
-            <td>Public web data (competitor ads, public profiles); no Customer PII</td>
-            <td>US</td>
-            <td><a href="https://apify.com/legal/dpa">link</a></td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td><strong>Upstash</strong></td>
-            <td>Redis (queue + caching)</td>
-            <td>Job queue payloads (ephemeral), session caches</td>
-            <td>US / EU multi-region</td>
-            <td><a href="https://upstash.com/legal/dpa">link</a></td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td><strong>Meta Platforms</strong> (Facebook / Instagram)</td>
-            <td>Advertising delivery (Marketing API)</td>
-            <td>Customer ad creative, ad spend, audience targeting parameters, campaign performance</td>
-            <td>US</td>
-            <td><a href="https://www.facebook.com/legal/terms/businesstools">link</a></td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td><strong>Google LLC (Workspace)</strong></td>
-            <td>Email, calendar, docs (internal Kiseki team only — not Customer data)</td>
-            <td>Internal team comms only</td>
-            <td>US</td>
-            <td><a href="https://workspace.google.com/terms/dpa_terms.html">link</a></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>Cross-border data transfers</h2>
-      <p>Kiseki transfers data to:</p>
+      <p>Kiseki uses a small set of vetted sub-processors to deliver the Service. Categories include:</p>
       <ul>
-        <li><strong>United States</strong>: Anthropic, OpenAI, Cloudflare, Resend, Polar, Mux, Apify, Meta, Google</li>
-        <li><strong>European Union (Germany)</strong>: Hetzner</li>
-        <li><strong>European Union (Ireland — eu-west-1)</strong>: Supabase</li>
-        <li><strong>Multi-region (US / EU)</strong>: Upstash</li>
+        <li>Cloud infrastructure (compute, database, storage, edge / CDN);</li>
+        <li>AI inference providers (text generation, image generation, embeddings);</li>
+        <li>Transactional email delivery;</li>
+        <li>Merchant-of-record payment processing and tax compliance;</li>
+        <li>Video hosting (for the VSL Builder feature);</li>
+        <li>Public-data research tooling (no Customer PII);</li>
+        <li>Internal team productivity (email, calendar, docs — not used for Customer data).</li>
       </ul>
 
-      <h3>Legal basis for EU → US transfers</h3>
+      <p>All sub-processors handling Personal Data are bound by Data Processing Agreements with Standard Contractual Clauses where applicable. Encryption at rest (AES-256) and in transit (TLS 1.3) is enforced across all transfers.</p>
+
+      <h2>How to request the canonical list</h2>
+      <p>The full list of named sub-processors — vendor, purpose, data categories processed, region, and link to each sub-processor's DPA — is provided to active Customers as part of the Data Processing Agreement.</p>
+
+      <p>To receive the current list, email <a href="mailto:legal@thekiseki.app">legal@thekiseki.app</a> from the email address registered to your Kiseki account.</p>
+
+      <h2>Change notification</h2>
+      <p>Kiseki notifies Customers at least <strong>30 days in advance</strong> of adding or changing sub-processors via:</p>
       <ul>
-        <li>All US sub-processors covered by <strong>Standard Contractual Clauses</strong> (SCCs) in their DPAs;</li>
-        <li>Data minimization: only data strictly necessary for service delivery;</li>
-        <li>No special category data (Art. 9 GDPR) without explicit consent;</li>
-        <li>Encryption at rest (AES-256) and in transit (TLS 1.3) across all transfers.</li>
+        <li>Email to the primary admin on file;</li>
+        <li>Update to the canonical list provided under the DPA;</li>
+        <li>Customer has 30 days to object; if no resolution, Customer may terminate the affected portion of the Service.</li>
       </ul>
 
-      <h2>Sub-processor change notification</h2>
-      <p>Per <a href="/dpa/">DPA</a> §5.4, Kiseki notifies Customers at least <strong>30 days in advance</strong> of adding or changing sub-processors via:</p>
+      <h2>Related documents</h2>
       <ul>
-        <li>Email to <code>legal@</code> on the customer's domain (if configured) or to the primary admin;</li>
-        <li>Update to this page;</li>
-        <li>Customer has 30 days to object; if no resolution, Customer may terminate.</li>
+        <li><a href="/privacy/">Privacy Policy</a> — public summary of data handling;</li>
+        <li><a href="/dpa/">Data Processing Agreement</a> — request via email.</li>
       </ul>
-
-      <h2>Questions</h2>
-      <p>Privacy and sub-processor questions: <a href="mailto:privacy@thekiseki.app">privacy@thekiseki.app</a></p>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
       <address>
-        MATRIXVISTA - FZCO<br />
-        101 Building A2, Dubai Digital Park<br />
-        Dubai Silicon Oasis, Dubai 342001, UAE<br />
-        TRN 104467565800001 · License 44526 (IFZA)
+        Kiseki is operated by MATRIXVISTA - FZCO (United Arab Emirates).<br />
+        For legal correspondence, contact <a href="mailto:legal@thekiseki.app">legal@thekiseki.app</a>.
       </address>
       <div class="meta">
         Last updated 2026-04-26<br />
